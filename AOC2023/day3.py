@@ -1,9 +1,7 @@
 from typing import List, Tuple, Dict
-from pprint import pprint
-import time
 
 
-def has_symbol(grid: List[List[str]], grid_x: int, grid_y: int, specific=None):
+def has_symbol(grid: List[str], grid_x: int, grid_y: int, specific=None):
     for y in range(-1, 2, 1):
         for x in range(-1, 2, 1):
             ny = grid_y + y
